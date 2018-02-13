@@ -1,0 +1,27 @@
+<%= form_with(model: commend, local: true) do |form| %>
+  <% if commend.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(commend.errors.count, "error") %> prohibited this commend from being saved:</h2>
+
+      <ul>
+      <% commend.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :post_id %>
+    <%= form.number_field :post_id, id: :commend_post_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :body %>
+    <%= form.text_area :body, id: :commend_body %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
