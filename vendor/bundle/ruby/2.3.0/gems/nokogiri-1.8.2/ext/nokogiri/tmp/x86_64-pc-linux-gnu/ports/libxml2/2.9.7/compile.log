@@ -1,0 +1,28 @@
+make  all-recursive
+make[1]: Entering directory '/home/dany/web_design_project/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.8.2/ext/nokogiri/tmp/x86_64-pc-linux-gnu/ports/libxml2/2.9.7/libxml2-2.9.7'
+Making all in include
+make[2]: Entering directory '/home/dany/web_design_project/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.8.2/ext/nokogiri/tmp/x86_64-pc-linux-gnu/ports/libxml2/2.9.7/libxml2-2.9.7/include'
+Making all in libxml
+make[3]: Entering directory '/home/dany/web_design_project/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.8.2/ext/nokogiri/tmp/x86_64-pc-linux-gnu/ports/libxml2/2.9.7/libxml2-2.9.7/include/libxml'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/dany/web_design_project/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.8.2/ext/nokogiri/tmp/x86_64-pc-linux-gnu/ports/libxml2/2.9.7/libxml2-2.9.7/include/libxml'
+make[3]: Entering directory '/home/dany/web_design_project/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.8.2/ext/nokogiri/tmp/x86_64-pc-linux-gnu/ports/libxml2/2.9.7/libxml2-2.9.7/include'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/home/dany/web_design_project/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.8.2/ext/nokogiri/tmp/x86_64-pc-linux-gnu/ports/libxml2/2.9.7/libxml2-2.9.7/include'
+make[2]: Leaving directory '/home/dany/web_design_project/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.8.2/ext/nokogiri/tmp/x86_64-pc-linux-gnu/ports/libxml2/2.9.7/libxml2-2.9.7/include'
+Making all in .
+make[2]: Entering directory '/home/dany/web_design_project/vendor/bundle/ruby/2.3.0/gems/nokogiri-1.8.2/ext/nokogiri/tmp/x86_64-pc-linux-gnu/ports/libxml2/2.9.7/libxml2-2.9.7'
+  CC       SAX.lo
+  CC       entities.lo
+  CC       encoding.lo
+  CC       error.lo
+  CC       parserInternals.lo
+  CC       parser.lo
+  CC       tree.lo
+  CC       hash.lo
+Makefile:1249: recipe for target 'hash.lo' failed
+make[2]: *** [hash.lo] Error 1
+Makefile:1441: recipe for target 'all-recursive' failed
+make[1]: *** [all-recursive] Interrupt
+Makefile:860: recipe for target 'all' failed
+make: *** [all] Interrupt

@@ -1,7 +1,16 @@
+<%= stylesheet_link_tag "main" %>
+
+<!-- <script>
+  document.getElementById("hello123").
+    addEventListener("hover", function(){
+        alert("WORKS");
+    });
+</script> -->
+
 <p id="notice"><%= notice %></p>
-
-<h1>Posts</h1>
-
+<div id="header">
+  <h1 id="title">Posts</h1>
+</div>
 <table>
   <thead>
     <tr>
@@ -16,9 +25,9 @@
       <tr>
         <td><%= post.title %></td>
         <td><%= post.body %></td>
-        <td><%= link_to 'Show', post %></td>
-        <td><%= link_to 'Edit', edit_post_path(post) %></td>
-        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td class="button"><%= link_to 'Show', post %></td>
+        <td class="button"><%= link_to 'Edit', edit_post_path(post) %></td>
+        <td class="button"><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
