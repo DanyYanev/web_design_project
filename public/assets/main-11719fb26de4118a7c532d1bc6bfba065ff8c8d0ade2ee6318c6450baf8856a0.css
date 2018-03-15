@@ -1,9 +1,14 @@
+{
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial;
   padding: 10px;
   background: #f1f1f1;
-  margin: 0;
+margin: 0;
 }
+
 /* Header/Blog Title */
 #header {
   padding: 1%;
@@ -14,6 +19,33 @@ body {
 
 #title {
   text-align: center;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: #CEF6E3;
+/* background-color: red; */
+padding-top: 2px;
+padding-right: 10px;
+padding-bottom: 10px;
+padding-left: 10px;
+  margin-top: 8px;
+margin-left: auto;
+margin-right: auto;
+max-width: 100%
+}
+
+/*will override background-color to all elements with class card and id sds011 */
+.card#sds011{
+background-color: @;
+}
+
+.card#sds280{
+background-color: @;
+}
+
+.card#wifi{
+background-color: @;
 }
 
 /* Tables */
@@ -32,10 +64,20 @@ td.button:hover{
   background-color: darkgray;
 }
 
+th.parameter{
+  width: 50%;
+  padding-left: 30px;
+}
+
 td.button{
   width: 10%;
   text-align: center;
   background-color: lightgray;
+}
+
+td.value{
+  text-align: center;
+  cellpadding 5px;
 }
 
 /* Footer */

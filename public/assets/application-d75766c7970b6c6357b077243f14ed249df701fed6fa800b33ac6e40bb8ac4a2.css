@@ -1,0 +1,198 @@
+{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+margin: 0;
+}
+
+/* Header/Blog Title */
+#header {
+  padding: 1%;
+  text-align: center;
+  background: Gainsboro;
+  margin-bottom: 1%;
+}
+
+#title {
+  text-align: center;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: #CEF6E3;
+/* background-color: red; */
+padding-top: 2px;
+padding-right: 10px;
+padding-bottom: 10px;
+padding-left: 10px;
+  margin-top: 8px;
+margin-left: auto;
+margin-right: auto;
+max-width: 100%
+}
+
+/*will override background-color to all elements with class card and id sds011 */
+.card#sds011{
+background-color: @;
+}
+
+.card#sds280{
+background-color: @;
+}
+
+.card#wifi{
+background-color: @;
+}
+
+/* Tables */
+table {
+  border-collapse: collapse;
+width: 100%
+}
+
+th, td {
+  padding: 5px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+td.button:hover{
+  background-color: darkgray;
+}
+
+th.parameter{
+  width: 50%;
+  padding-left: 30px;
+}
+
+td.button{
+  width: 10%;
+  text-align: center;
+  background-color: lightgray;
+}
+
+td.value{
+  text-align: center;
+  cellpadding 5px;
+}
+
+/* Footer */
+.footer {
+  padding: 2px;
+  text-align: center;
+  background: DarkCyan;
+  margin-top: 15px;
+}
+/* line 1, /home/dany/web_design_project/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  margin: 33px;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 10, /home/dany/web_design_project/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 16, /home/dany/web_design_project/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 22, /home/dany/web_design_project/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 25, /home/dany/web_design_project/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 29, /home/dany/web_design_project/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 35, /home/dany/web_design_project/app/assets/stylesheets/scaffolds.scss */
+th {
+  padding-bottom: 5px;
+}
+
+/* line 39, /home/dany/web_design_project/app/assets/stylesheets/scaffolds.scss */
+td {
+  padding: 0 5px 7px;
+}
+
+/* line 44, /home/dany/web_design_project/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 49, /home/dany/web_design_project/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 53, /home/dany/web_design_project/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 59, /home/dany/web_design_project/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px 7px 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 66, /home/dany/web_design_project/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px -7px 0;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 76, /home/dany/web_design_project/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 82, /home/dany/web_design_project/app/assets/stylesheets/scaffolds.scss */
+label {
+  display: block;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
