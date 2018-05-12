@@ -53,3 +53,7 @@ td.button{
     /*Without this, clicking will make it sticky*/
     pointer-events: none;
 }
+
+.btn-space{
+    margin-left: 10px;
+}
