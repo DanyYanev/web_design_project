@@ -7,6 +7,11 @@ class PostsController < ApplicationController
     @posts = Post.all
   end
 
+  # GET /hot
+  def hot
+    @posts = Post.all
+    #TODO
+  end
   # GET /posts/1
   # GET /posts/1.json
   def show
