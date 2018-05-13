@@ -1,17 +1,116 @@
+<!-- <%= stylesheet_link_tag "bootstrap-social" %> -->
+<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <%= stylesheet_link_tag "main" %>
+<%= stylesheet_link_tag "social-buttons" %>
 
-<p id="notice"><%= notice %></p>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="/posts">Blog</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-<p>
-  <strong>Title:</strong>
-  <%= @post.title %>
-</p>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+              <a class="nav-link" href="/hot">
+                  <i class="em em-fire"></i>
+                  Hot
+                  <span class="sr-only">(current)</span>
+              </a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="/fresh">
+                  Fresh
+              </a>
+          </li>
+        </ul>
 
-<p>
-  <strong>Body:</strong>
-  <%= @post.body %>
-</p>
-<table>
+        <div class="nav-item dropdown">
+           <a class="nav-link dropdown-toggle" id="navbar-dropdown-show" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             <i class="em em-flag-um" id="preview-flag"></i>
+           </a>
+           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <div class="dropdown-item" id="dropdown-item-option-1" href="/?en">
+                  <i class="em em-flag-um"></i>
+                  EN
+              </div>
+              <div class="dropdown-item" id="dropdown-item-option-2" href="/?bg">
+                  <i class="em em-flag-bg"></i>
+                  BG
+              </div>
+           </div>
+       </div>
+
+
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0 mr-2" type="submit">Search</button>
+        </form>
+
+        <form action="/login">
+            <button type="submit" class="btn btn-space" href="/login">Login</button>
+        </form>
+  </div>
+</nav>
+
+<div class="container">
+    <div class="row mt-2">
+        <div class="col-md-8 ding">
+            <div class="">
+                <h1 class="title">
+                    <%= @post.title %>
+                </h1>
+                <p class="mt-2">
+                    <%= @post.body %>
+                </p>
+                <div>
+                    <ul class="navbar-nav d-inline">
+                        <li class="nav-item d-inline mr-4">
+                            <p class="d-inline"> George Orwell</p>
+                        </li>
+                        <li class="nav-item d-inline mr-4">
+                            <p class="d-inline"><%= @post.created_at %></p>
+                        </li>
+                        <li class="nav-item d-inline mr-4">
+                            <%= link_to 'Edit', edit_post_path(@post), :class => "btn" %>
+                        </li>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="card col-md-3" style="width: 20px;">
+            <!-- <img class="card-img-top" src="img_avatar1.png" alt="Card image" style="width:100%"> -->
+            <!-- <h3 class="card-header text-center mt-2">George Orwell</h3> -->
+            <%= image_tag("orwell2.jpg", :class => "card-img-top img-fluid", :alt => "Card image", :style => "width:100%") %>
+            <div class="card-body">
+                <h4 class="card-title">George Orwell</h4>
+                <p class="card-text">I totaly wrote this. Very cool site by the way.</p>
+                <i class="em em-weary"></i>
+                <i class="em em-weary"></i>
+                <i class="em em-weary"></i>
+                <i class="em em-sweat_drops"></i>
+                <i class="em em-sweat_drops"></i>
+                <i class="em em-100"></i>
+
+                <form action="https://en.wikipedia.org/wiki/George_Orwell" target="_blank">
+                    <button type="submit" class="btn btn-info btn-block mt-4">More</button>
+                </form>
+            </div>
+            <div class="card-footer text-centered">
+                <button type="submit" class="btn btn-info fa fa-twitter"></button>
+                <button type="submit" class="btn btn-info fa fa-facebook"></button>
+                <button type="submit" class="btn btn-info fa fa-linkedin"></button>
+                <button type="submit" class="btn btn-info fa fa-instagram"></button>
+                <button type="submit" class="btn btn-info fa fa-google"></button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- <table>
     <thead>
     <tr>
       <th>Body</th>
@@ -29,8 +128,4 @@
         </tr>
       <% end %>
     </tbody>
-</table>
-<br>
-
-<%= link_to 'Edit', edit_post_path(@post) %> |
-<%= link_to 'Back', posts_path %>
+</table> -->

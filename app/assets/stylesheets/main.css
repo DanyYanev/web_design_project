@@ -54,6 +54,37 @@ td.button{
     pointer-events: none;
 }
 
-.btn-space{
-    margin-left: 10px;
+.ding{
+    padding: 20px 15px 20px;
+    background-color: white;
+}
+
+#post:hover{
+    text-decoration: none;
+    /* color: black; */
+}
+
+#post{
+    color: black;
+}
+
+.card{
+    padding: 0;
+}
+
+.fa{
+    padding: 15px;
+    font-size: 2em;
+}
+
+.fa:hover {
+    text-decoration: none;
+}
+
+.footer-el {
+    padding: 15px;
+}
+
+h1.title {
+    padding: 0 0 6px 15px; 
 }
