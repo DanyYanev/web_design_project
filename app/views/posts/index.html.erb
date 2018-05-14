@@ -62,6 +62,7 @@
 </nav>
 
 <% @posts.each do |post| %>
+    <hr>
     <a id="post" href="/posts/<%= post.id%>">
         <div class="container">
             <div class="row mt-3">
@@ -73,25 +74,36 @@
                         <div>
                             <ul class="navbar-nav d-inline">
                                 <li class="nav-item d-inline mr-4">
+                                    <i class="em em-arrow_up"></i>
+                                    <p class="d-inline trending"> Trending </p>
+                                </li>
+                                <li class="nav-item d-inline mr-4">
                                     <p class="d-inline"> George Orwell</p>
                                 </li>
                                 <li class="nav-item d-inline mr-4">
                                     <p class="d-inline"><%= post.created_at.strftime("%d %b %y") %></p>
                                 </li>
+                                <li class="nav-item d-inline mr-4">
+                                    <%= image_tag("verified.png", :class => "img", :alt => "Verified image") %>
+                                    <i>Verified author</i>
+                                </li>
                             </ul>
                         </div>
                     </div>
-                    <div class="card col-xs-3" style="max-width: 200px">
-
-                        <%= image_tag("orwell2.jpg", :class => "card-img-top", :alt => "Card image", :style => "width:50%") %>
-                    </div>
+                    <!-- <div class="card" style="max-width: 200px">
+                        <%= image_tag("orwell2.jpg", :class => "card-img-top img-fluid", :alt => "Card image") %>
+                        <div class="card-footer">
+                            <%= image_tag("verified.png", :class => "img", :alt => "Verified image") %>
+                            <i>Verified author</i>
+                        </div>
+                    </div> -->
             </div>
         </div>
     </a>
-    <hr>
+    <!-- <hr> -->
 <% end %>
 
-<footer class="container-fluid text-center mb">
+<footer class="container-fluid footer text-center">
     <div class="row">
         <div class="footer-el col-12 col-md-6 mb-20">
             <h3>Contact Us</h3>
